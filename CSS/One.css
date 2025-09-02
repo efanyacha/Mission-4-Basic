@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FF7E5F, #FEB47B);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #55380755;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 25px;
+}
+
+.profile {
+    background: #FF921C;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.time {
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #553807;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+textarea {
+    flex: 2;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 40px;
+}
+
+select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ECA427;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.todo-section, .done-section {
+    margin-top: 20px;
+}
+
+#todoTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#todoTable th, #todoTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#todoTable th {
+    background: #FF921C;
+    color: #fff;
+}
+
+.priority-Low {
+    color: #2ecc40;
+    font-weight: bold;
+}
+
+.priority-Medium {
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+.priority-High {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.done-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.done-section li {
+    background: #e0ffe0;
+    border: 1px solid #b2ffb2;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    color: #333;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+#deleteAllBtn {
+    background: #dc3545;
+    margin-bottom: 8px;
+}
+
+#deleteAllBtn:hover {
+    background: #c82333;
+}
+
+.profile-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.label {
+    min-width: 70px;
+    text-align: left;
+    display: inline-block;
+}
+
+.colon {
+    min-width: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.value {
+    flex: 1;
+    text-align: left;
+    display: inline-block;
+}
+
+#submitBtn {
+    background: #ECA427;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#submitBtn:hover {
+    background-color: #0056b3;
+}
+
+.overdue {
+    background: #ffeaea;
+    font-weight: bold;
+}

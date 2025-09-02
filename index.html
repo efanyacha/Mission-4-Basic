@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Lengkap</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" href="CSS/One.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile -->
+        <div class="profile">
+            <h2>Profile</h2>
+            <div class="profile-row">
+                <span class="label">Nama</span>
+                <span class="colon">:</span>
+                <span class="value">Efan Yacha Rezkyanto</span>
+            </div>
+            <div class="profile-row">
+                <span class="label">Jabatan</span>
+                <span class="colon">:</span>
+                <span class="value">Staff IT</span>
+            </div>
+        </div>
+        <!-- Time -->
+        <div class="time" id="time"></div>
+        <!-- Form Input -->
+        <form id="todoForm">
+            <textarea id="taskInput" placeholder="Tulis tugas di sini..." required></textarea>
+            <select id="priorityInput" required>
+                <option value="" disabled selected>Pilih Prioritas</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <input type="date" id="dateInput">
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <!-- To Do Table -->
+        <div class="todo-section">
+            <h3>To Do</h3>
+            <button id="deleteAllBtn">Delete All</button>
+            <button id="returnAllBtn">Kembalikan All</button>
+            <table id="todoTable">
+                <thead>
+                    <tr>
+                        <th>Centang</th>
+                        <th>Tugas</th>
+                        <th>Prioritas</th>
+                        <th>Waktu</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="todoBody"></tbody>
+            </table>
+        </div>
+        <!-- Done List -->
+        <div class="done-section">
+            <h3>Done</h3>
+            <ul id="doneList"></ul>
+        </div>
+    </div>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
